@@ -31,7 +31,9 @@
     "check:ci": "yarn lint:ci && yarn test:ci",
     "commit": "git-cz",
     "publish": "cross-var yarn publish --new-version $npm_package_version",
-    "release": "release-it --config ./.release-it.json -n"
+    "release": "release-it --config ./.release-it.json -n",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "classnames": "2.2.6",
@@ -100,7 +102,11 @@
     "webpack-combine-loaders": "^2.0.3",
     "webpack-dev-server": "^3.1.0",
     "webpack-licenses-plugin": "^0.0.3",
-    "webpack-merge": "^4.1.2"
+    "webpack-merge": "^4.1.2",
+    "@storybook/react": "^5.0.6",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6"
   },
   "jest": {
     "setupFilesAfterEnv": [
