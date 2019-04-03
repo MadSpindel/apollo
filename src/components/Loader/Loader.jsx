@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Lottie from 'react-lottie';
-import * as animationData from './loader.json'; // eslint-disable-line import/no-unresolved
+import * as animationData from './Loader.json';
 
 const sizePropType = PropTypes.oneOfType([PropTypes.number, PropTypes.string]);
 
