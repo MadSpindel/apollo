@@ -33,7 +33,7 @@
     "publish": "cross-var yarn publish --new-version $npm_package_version",
     "release": "release-it --config ./.release-it.json -n",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "dependencies": {
     "classnames": "2.2.6",
